@@ -1,0 +1,90 @@
+.App {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(to right, #04afde, #0072ff);
+  color: whitesmoke;
+}
+
+.Bloque_contador {
+  background-color: #111;
+  border: 2px solid #00d4ff;
+  border-radius: 25px;
+  padding: 30px 20px;
+  margin: 40px auto;
+  max-width: 350px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8);
+}
+
+.Bloque_contador label {
+  display: block;
+  background: #222;
+  color: #00d4ff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+.Bloque_contador button {
+  background-color: #333;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.Bloque_contador button:hover {
+  background-color: #00d4ff;
+  color: black;
+  transform: scale(1.1);
+}
+
+.Bloque_contador button:active {
+  transform: scale(0.95);
+}
+
+/* Diferenciar botones */
+.Bloque_contador button.operador {
+  background-color: #ff9800;
+}
+
+.Bloque_contador button.operador:hover {
+  background-color: #ffc107;
+  color: black;
+}
+
+.Bloque_contador button.reset {
+  background-color: #e53935;
+}
+
+.Bloque_contador button.reset:hover {
+  background-color: #ff5252;
+}
+
+.Bloque_contador button.igual {
+  background-color: #43a047;
+  grid-column: span 2;
+}
+
+.Bloque_contador button.igual:hover {
+  background-color: #66bb6a;
+}
+
+/* Organizar en grid */
+.Bloque_contador .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
